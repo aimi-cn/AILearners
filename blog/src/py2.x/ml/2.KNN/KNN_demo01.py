@@ -8,7 +8,7 @@
 @Version :   1.0
 @Contact :   xiaoming3526@gmail.com
 @Desc    :   2.2.k-近邻算法例子-优化约会网站的配对效果
-@github  :   https://github.com/xiaoming3526/ai-ming3526
+@github  :   https://github.com/aimi-cn/AILearners
 
 '''
 
@@ -161,8 +161,8 @@ Returns:
     minVals - 数据最小值
 """
 def datingClassTest():
-    #打开的文件名
-    filename = "C:/Users/Administrator/Desktop/blog/github/ai-ming3526/data/2.KNN/datingTestSet2.txt"
+    #打开的文件名 修改自己的地址
+    filename = "C:/Users/Administrator/Desktop/blog/github/AILearners/data/2.KNN/datingTestSet2.txt"
     #将返回的特征矩阵和分类向量分别存储到datingDataMat和datingLabels中
     datingDataMat, datingLabels = file2matrix(filename)
     #取所有数据的百分之十
@@ -202,7 +202,7 @@ def classifyPerson():
     ffMiles = float(input("每年获得的飞行常客里程数:"))
     iceCream = float(input("每周消费的冰激淋公升数:"))
     #打开的文件名
-    filename = "C:/Users/Administrator/Desktop/blog/github/ai-ming3526/data/2.KNN/datingTestSet2.txt"
+    filename = "C:/Users/Administrator/Desktop/blog/github/AILearners/data/2.KNN/datingTestSet2.txt"
     #打开并处理数据
     datingDataMat, datingLabels = file2matrix(filename)
     #训练集归一化
@@ -219,7 +219,7 @@ def classifyPerson():
 
 if __name__ == '__main__':
     #打开的文件名 自己修改文件路径
-    filename = "C:/Users/Administrator/Desktop/blog/github/ai-ming3526/data/2.KNN/datingTestSet2.txt"
+    filename = "C:/Users/Administrator/Desktop/blog/github/AILearners/data/2.KNN/datingTestSet2.txt"
     #打开并处理数据
     datingDataMat, datingLabels = file2matrix(filename)
     #showdatas(datingDataMat, datingLabels)

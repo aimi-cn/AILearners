@@ -7,7 +7,7 @@
 @Version :   1.0
 @Contact :   xiaoming3526@gmail.com
 @Desc    :   None
-@github  :   https://github.com/xiaoming3526/ai-ming3526
+@github  :   https://github.com/aimi-cn/AILearners
 '''
 
 # here put the import lib

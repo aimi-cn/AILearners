@@ -2,11 +2,11 @@
 
 ## 《机器学习实战》书籍、源码解析、数据集下载
 
-[机器学习实战书籍](https://github.com/xiaoming3526/ai-ming3526/tree/master/books)
+[机器学习实战书籍](https://github.com/aimi-cn/AILearners/tree/master/books)
 
-[源码详细解刨](https://github.com/xiaoming3526/ai-ming3526/tree/master/blog)
+[源码详细解刨](https://github.com/aimi-cn/AILearners/tree/master/blog)
 
-[源码和数据集下载](https://github.com/xiaoming3526/ai-ming3526/tree/master/data/sourceData)
+[源码和数据集下载](https://github.com/aimi-cn/AILearners/tree/master/data/sourceData)
 
 ## 机器学习建议
 
