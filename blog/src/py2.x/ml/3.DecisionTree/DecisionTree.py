@@ -48,6 +48,7 @@ def creatDataSet():
 @description: 计算给定数据集的香农熵
 @param {type} 数据集
 @return: 返回 每一组feature下的某个分类下，香农熵的信息期望
+eg:dataSet下 Yes/No 分类下香农熵大小 0.970950594455 信息越有序，信息熵越低。
 '''
 def calcShannonEnt(dataSet):
     # -----------计算香农熵的第一种实现方式start--------------------------------------------------------------------------------
@@ -136,7 +137,7 @@ def splitDataSet(dataSet, index, value):
 demo:可以看出infoGain信息增益0的时候是比较大的 所以最好的特征是0
 输出：infoGain= 0.419973094022 bestFeature= 0 0.970950594455 0.550977500433
     infoGain= 0.170950594455 bestFeature= 1 0.970950594455 0.8
-    0
+    最后返回的最好的数据集bestFeature=0
 '''
 def chooseBestFeatureToSplit(dataSet):
     # -----------选择最优特征的第一种方式 start------------------------------------
@@ -227,7 +228,7 @@ def createTree(dataSet, labels):
     # eg classList:['yes', 'yes', 'no', 'no', 'no']
     classList = [example[-1] for example in dataSet]
     # 如果数据集的最后一列的第一个值出现的次数=整个集合的数量，也就说只有一个类别，就只直接返回结果就行
-    # 第一个停止条件：所有的类标签完全相同，则直接返回该类标签。
+    # 第一个停止条件：所有的类标签(Label)完全相同，则直接返回该类标签。
     # count() 函数是统计括号中的值在list中出现的次数
     # eg: classList:['yes', 'yes'] classList.count(classList[0])== len(classList)=2直接返回'yes'
     if classList.count(classList[0]) == len(classList):
@@ -257,16 +258,14 @@ def createTree(dataSet, labels):
         myTree[bestFeatLabel][value] = createTree(splitDataSet(dataSet, bestFeat, value), subLabels)
         print('myTree', value, myTree)
     return myTree
-
-def classify(inputTree, featLabels, testVec):
-    """classify(给输入的节点，进行分类)
-    Args:
-        inputTree  决策树模型
+'''
+@description: 给输入的节点，进行分类
+@param {inputTree  决策树模型
         featLabels Feature标签对应的名称
-        testVec    测试输入的数据
-    Returns:
-        classLabel 分类的结果值，需要映射label才能知道名称
-    """
+        testVec    测试输入的数据} 
+@return: classLabel 分类的结果值，需要映射label才能知道名称
+'''
+def classify(inputTree, featLabels, testVec):
     # 获取tree的根节点对于的key值
     firstStr = inputTree.keys()[0]
     # 通过key得到根节点对应的value
@@ -332,7 +331,7 @@ def fishTest():
     # print(get_tree_height(myTree))
 
     # # 画图可视化展现
-    dtPlot.createPlot(myTree)
+    # dtPlot.createPlot(myTree)
 
 if __name__ == '__main__':
     fishTest()
