@@ -6,7 +6,7 @@
 @Author  :   xiao ming 
 @Version :   1.0
 @Contact :   xiaoming3526@gmail.com
-@Desc    :   decisionTree
+@Desc    :   决策树案例01预测鱼类和非鱼类
 @github  :   https://github.com/aimi-cn/AILearners
 @reference:  https://github.com/apachecn/AiLearning/
 '''
@@ -256,17 +256,17 @@ def createTree(dataSet, labels):
         subLabels = labels[:]
         # 遍历当前选择特征包含的所有属性值，在每个数据集划分上递归调用函数createTree()
         myTree[bestFeatLabel][value] = createTree(splitDataSet(dataSet, bestFeat, value), subLabels)
-        print('myTree', value, myTree)
+        # print('myTree', value, myTree)
     return myTree
 '''
 @description: 给输入的节点，进行分类
-@param {inputTree  决策树模型
-        featLabels Feature标签对应的名称
-        testVec    测试输入的数据} 
-@return: classLabel 分类的结果值，需要映射label才能知道名称
+@param {inputTree  决策树模型 eg:{'no surfacing': {0: 'no', 1: {'flippers': {0: 'no', 1: 'yes'}}}}
+        featLabels Feature标签对应的名称 eg:['no surfacing', 'flippers']
+        testVec    测试输入的数据 eg:[1,1]} 
+@return: classLabel 分类的结果值(是否是鱼类 yes/no)，需要映射label才能知道名称 
 '''
 def classify(inputTree, featLabels, testVec):
-    # 获取tree的根节点对于的key值
+    # 获取tree的根节点对应的key值
     firstStr = inputTree.keys()[0]
     # 通过key得到根节点对应的value
     secondDict = inputTree[firstStr]
@@ -276,7 +276,7 @@ def classify(inputTree, featLabels, testVec):
     key = testVec[featIndex]
     valueOfFeat = secondDict[key]
     print('+++', firstStr, 'xxx', secondDict, '---', key, '>>>', valueOfFeat)
-    # 判断分枝是否结束: 判断valueOfFeat是否是dict类型
+    # 判断分枝是否结束: 判断valueOfFeat是否是dict类型 是dict类型就说明分支还没结束 继续进行分类
     if isinstance(valueOfFeat, dict):
         classLabel = classify(valueOfFeat, featLabels, testVec)
     else:
@@ -323,15 +323,15 @@ def fishTest():
     # print(bestFeature)
     import copy
     myTree = createTree(myData, copy.deepcopy(labels))
-    #print(myTree)
+    print(myTree)
     # [1, 1]表示要取的分支上的节点位置，对应的结果值
-    # print(classify(myTree, labels, [1, 1]))
+    print(classify(myTree, labels, [1, 1]))
     
     # # 获得树的高度
     # print(get_tree_height(myTree))
 
     # # 画图可视化展现
-    # dtPlot.createPlot(myTree)
+    dtPlot.createPlot(myTree)
 
 if __name__ == '__main__':
     fishTest()
