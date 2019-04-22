@@ -69,7 +69,7 @@
 
 [机器学习实战书籍](https://github.com/aimi-cn/AILearners/tree/master/books)
 
-[机器学习实战视频](cwiki.apachecn.org/pages/viewpage.action?pageId=8749100)
+[机器学习实战视频](http://i.youku.com/apachecn)
 
 ### 3.3、进阶
 
