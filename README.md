@@ -1,10 +1,18 @@
-# 一、机器学习 ---xiaoming
+# 一、机器学习
 
-## 《机器学习实战》书籍、源码解析、数据集下载
+## 算法与人生 [@bidongqinxian](https://github.com/bidongqinxian)
+
+为你学习机器学习开头指引明路~
+
+[详细文章地址](https://github.com/aimi-cn/AILearners/tree/master/blog/Algorithm)
+
+[源码地址]()
+
+## 《机器学习实战》源码详细解析、书籍、数据集下载 [@Fermin](https://github.com/xiaoming3526)
+
+[**源码详细解刨**](https://github.com/aimi-cn/AILearners/tree/master/blog)
 
 [机器学习实战书籍](https://github.com/aimi-cn/AILearners/tree/master/books)
-
-[源码详细解刨](https://github.com/aimi-cn/AILearners/tree/master/blog)
 
 [源码和数据集下载](https://github.com/aimi-cn/AILearners/tree/master/data/sourceData)
 
@@ -12,7 +20,6 @@
 
 > 搜索微信公众号：'AI-ming3526'或者'计算机视觉这件小事' 获取更多计算机视觉机器学习干货
 >
-> csdn：https://blog.csdn.net/baidu_31657889/
 
 学习机器学习需要一定的数学基础，但是仅仅是一点数学基础，不要被这些吓坏了，各位都是大佬，拿起键盘就是干。
 
@@ -60,7 +67,7 @@
 >
 > 大致内容就是带着学习了《机器学习实战》这本书来做的
 
-[机器学习实战书籍](https://github.com/xiaoming3526/ai-ming3526/tree/master/books)
+[机器学习实战书籍](https://github.com/aimi-cn/AILearners/tree/master/books)
 
 [机器学习实战视频](cwiki.apachecn.org/pages/viewpage.action?pageId=8749100)
 
@@ -80,21 +87,29 @@
 
 当然这些国内都会有对应大佬有视频的翻译(b站) 感兴趣的自己找找	
 
-# 二、深度学习 kaijie-guo
+# 二、深度学习
+
+cnn
+
+rnn
 
 nlp学习
-
-
 
 ## 项目负责人
 
 > ML
 
-[@xiaoming3526](https://github.com/xiaoming3526)
+[@fanming](https://github.com/xiaoming3526)
+
+[@bidongqinxian](https://github.com/bidongqinxian)
+
+[@JermaineZ](https://github.com/JermaineZ)
 
 > DL
 
-[@guokaijie]()
+[@guokaijie](https://github.com/abc907558136)
+
+[@changan](https://github.com/stuchangan)
 
 ## 免责声明 - 【只供学习参考】
 
