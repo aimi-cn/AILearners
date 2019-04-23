@@ -6,7 +6,7 @@
 
 [详细文章地址](https://github.com/aimi-cn/AILearners/tree/master/blog/Algorithm)
 
-[源码地址]()
+[源码地址](https://github.com/aimi-cn/AILearners/tree/master/blog/src/py2.x/algorithm)
 
 ## 《机器学习实战》源码详细解析、书籍、数据集下载 [@Fermin](https://github.com/xiaoming3526)
 
