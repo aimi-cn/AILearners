@@ -1,4 +1,5 @@
 # <center>AIMI-CN 推荐AI学习内容 </center>
+# <p align="center">AIMI-CN 推荐AI学习内容</p>
 
 ## 算法与人生 [@bidongqinxian](https://github.com/bidongqinxian)
 
