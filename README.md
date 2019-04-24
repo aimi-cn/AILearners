@@ -2,6 +2,10 @@
 
 <div align=center><img width = '381' height ='163' src =data/otherImages/logo.png/></div>
 
+## 组织介绍：
+
+<a target="_blan" href="//shang.qq.com/wpa/qunwpa?idkey=e0babfbb0e942a7ab871c51a13436fb5689aa4b0d8776641c8ba996d84c53385"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="加入qq群" title="AI~AIMkICN"></a>
+
 ## 算法与人生 [@bidongqinxian](https://github.com/bidongqinxian)
 
 为你学习机器学习开头指引明路~
