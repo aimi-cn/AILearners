@@ -1,4 +1,4 @@
-# 一、机器学习
+# <center>AIMI-CN 推荐AI学习内容
 
 ## 算法与人生 [@bidongqinxian](https://github.com/bidongqinxian)
 
@@ -10,14 +10,26 @@
 
 ## 《机器学习实战》源码详细解析、书籍、数据集下载 [@Fermin](https://github.com/xiaoming3526)
 
+为你打开机器学习的大门~
+
 [**源码详细解刨**](https://github.com/aimi-cn/AILearners/tree/master/blog)
 
 [机器学习实战书籍](https://github.com/aimi-cn/AILearners/tree/master/books)
 
 [源码和数据集下载](https://github.com/aimi-cn/AILearners/tree/master/data/sourceData)
 
-[cs224n学习资料](https://pan.baidu.com/s/1ADcGT4sljV1lYPWNhFXs2Q )	 提取码：e234
+## 斯坦福cs224n ##2019##《基于深度学习的NLP》课程笔记、课后作业、学习资料 [@Guokaijie](https://github.com/abc907558136) [@changan](https://github.com/stuchangan)
+
+我们一起学习最前沿的NLP~
+
+[cs224n课程详细笔记]()  
+[cs224n课程课后作业解析]()  
+[cs224n学习资料](https://pan.baidu.com/s/1ADcGT4sljV1lYPWNhFXs2Q )	 提取码：e234  
 [youtube视频链接](https://www.youtube.com/watch?v=8rXD5-xhemo&list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z&index=1)	国内可以在B站找到
+
+# <center>机器学习、深度学习、NLP等 我们推荐的学习资料以及学习方向
+
+# 一、机器学习
 
 ## 机器学习建议
 
@@ -135,6 +147,7 @@ nlp学习
 4.对NLP学习有着浓厚的兴趣爱好
 
 **但是，我们不需要从零基础开始学习，这样会降低我们对学习的兴趣。所以，我们只要在学习的过程中不断弥补自身先决条件的不足，这样一定可以走进NLP学习的大门。**
+
 
 ## 免责声明 - 【只供学习参考】
 
