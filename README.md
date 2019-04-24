@@ -1,5 +1,7 @@
 # <p align="center">AIMI-CN 推荐AI学习内容</p>
 
+<div align=center><img width = '381' height ='163' src =data/otherImages/logo.png/></div>
+
 ## 算法与人生 [@bidongqinxian](https://github.com/bidongqinxian)
 
 为你学习机器学习开头指引明路~
