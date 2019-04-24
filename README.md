@@ -4,7 +4,7 @@
 
 ## 组织介绍：
 
-**AIMI-CN - AI学习交流群【1015286623】<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=e0babfbb0e942a7ab871c51a13436fb5689aa4b0d8776641c8ba996d84c53385"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="AI~AIMICN" title="AI~AIMICN"></a>**
+**AIMI-CN - AI学习交流群【1015286623】<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=e0babfbb0e942a7ab871c51a13436fb5689aa4b0d8776641c8ba996d84c53385"><img border="0" src="data/otherImages/group.png" alt="AI~AIMICN" title="AI~AIMICN"></a>**
 
 ## 算法与人生 [@bidongqinxian](https://github.com/bidongqinxian)
 
