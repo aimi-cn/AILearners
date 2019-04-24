@@ -18,7 +18,7 @@
 
 [源码和数据集下载](https://github.com/aimi-cn/AILearners/tree/master/data/sourceData)
 
-## 斯坦福cs224n ##2019##《基于深度学习的NLP》课程笔记、课后作业、学习资料 [@Guokaijie](https://github.com/abc907558136) [@changan](https://github.com/stuchangan)
+## 斯坦福cs224n **2019**《基于深度学习的NLP》课程笔记、课后作业、学习资料 [@Guokaijie](https://github.com/abc907558136) [@changan](https://github.com/stuchangan)
 
 我们一起学习最前沿的NLP~
 
