@@ -16,6 +16,9 @@
 
 [源码和数据集下载](https://github.com/aimi-cn/AILearners/tree/master/data/sourceData)
 
+[cs224n学习资料](https://pan.baidu.com/s/1ADcGT4sljV1lYPWNhFXs2Q )	 提取码：e234
+[youtube视频链接](https://www.youtube.com/watch?v=8rXD5-xhemo&list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z&index=1)	国内可以在B站找到
+
 ## 机器学习建议
 
 > 搜索微信公众号：'AI-ming3526'或者'计算机视觉这件小事' 获取更多计算机视觉机器学习干货
@@ -105,11 +108,33 @@ nlp学习
 
 [@JermaineZ](https://github.com/JermaineZ)
 
-> DL
+> # 三、NLP学习
+>
+> 现在市面上有很多介绍自然语言处理技术的书，网上也有很多关于NLP的学习课程和网站。但经过调研，发现斯坦福的cs224n：深度学习的自然语言处理，受到了广大NLP爱好者的青睐。但是，据我们所知，还没有发现有一个关于2019最新cs224n课程的中文学习笔记。所以，为了使大家更好地入门NLP科研，我们在此和大家分享我们的学习心得，希望可以和大家一起学习。
+>
+> ## 项目负责人
 
 [@guokaijie](https://github.com/abc907558136)
 
 [@changan](https://github.com/stuchangan)
+
+[@JermaineZ](https://github.com/JermaineZ)
+
+## 学习内容
+
+自然语言处理（NLP）是信息时代最重要的技术之一，也是人工智能的关键部分。NLP的应用无处不在，因为人们几乎用语言进行交流：网络搜索，广告，电子邮件，客户服务，语言翻译，医学报告等。近年来，深度学习方法在许多不同的NLP任务中获得了非常高的性能，使用单个端到端神经模型，不需要传统的，任务特定的特征工程。2019年课程较之以往，主要有两点区别。一是使用PyTorch而不是TensorFlow，二是课程安排更加紧密。通过该课程的学习，大家将学习、实施和理解他们自己的神经网络模型所需的技能。
+
+## 先决条件
+
+1.了解python基本用法
+
+2.了解基本的微积分、线性代数和概率统计内容
+
+3.对机器学习有一定的认识
+
+4.对NLP学习有着浓厚的兴趣爱好
+
+**但是，我们不需要从零基础开始学习，这样会降低我们对学习的兴趣。所以，我们只要在学习的过程中不断弥补自身先决条件的不足，这样一定可以走进NLP学习的大门。**
 
 ## 免责声明 - 【只供学习参考】
 
