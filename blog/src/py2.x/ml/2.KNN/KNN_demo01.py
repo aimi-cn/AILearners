@@ -7,7 +7,7 @@
 @Author  :   xiao ming 
 @Version :   1.0
 @Contact :   xiaoming3526@gmail.com
-@Desc    :   2.2.k-近邻算法例子-优化约会网站的配对效果
+@Desc    :   机器学习实战 2.2.k-近邻算法例子-优化约会网站的配对效果
 @github  :   https://github.com/aimi-cn/AILearners
 
 '''

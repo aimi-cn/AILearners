@@ -6,7 +6,7 @@
 @Author  :   xiao ming 
 @Version :   1.0
 @Contact :   xiaoming3526@gmail.com
-@Desc    :   None
+@Desc    :   机器学习实战2.3. k-近邻算法例子-识别手写数字
 @github  :   https://github.com/aimi-cn/AILearners
 '''
 
@@ -19,7 +19,7 @@ from os import listdir
 from collections import Counter
 import KNN
 
-def img2vecor(filename):
+def img2vector(filename):
     """
     将图像数据转换为向量
     :param filename: 图片文件 因为我们的输入数据的图片格式是 32 * 32的
@@ -50,7 +50,7 @@ def handwritingClassTest():
         classNumStr = int(fileStr.split('_')[0])
         hwLabels.append(classNumStr)
         # 将 32*32的矩阵->1*1024的矩阵
-        trainingMat[i, :] = img2vecor('data/2.KNN/trainingDigits/%s' % fileNameStr)
+        trainingMat[i, :] = img2vector('data/2.KNN/trainingDigits/%s' % fileNameStr)
 
     # 2. 导入测试数据
     testFileList = listdir('data/2.KNN/testDigits')  # iterate through the test set
@@ -60,7 +60,7 @@ def handwritingClassTest():
         fileNameStr = testFileList[i]
         fileStr = fileNameStr.split('.')[0]
         classNumStr = int(fileStr.split('_')[0])
-        vectorUnderTest = img2vecor('data/2.KNN/testDigits/%s' % fileNameStr)
+        vectorUnderTest = img2vector('data/2.KNN/testDigits/%s' % fileNameStr)
         classifierResult = KNN.classify0(vectorUnderTest, trainingMat, hwLabels, 3)
         print("the classifier came back with: %d, the real answer is: %d" % (classifierResult, classNumStr))
         if (classifierResult != classNumStr): 
