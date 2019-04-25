@@ -53,27 +53,27 @@ eg:dataSet下 Yes/No 分类下香农熵大小 0.970950594455 信息越有序，�
 def calcShannonEnt(dataSet):
     # -----------计算香农熵的第一种实现方式start--------------------------------------------------------------------------------
     #
-    # numEntries = len(dataSet)
-    # labelsCounts = {}
-    # for featVec in dataSet:
-    #     currentLabel = featVec[-1]
-    #     if currentLabel not in labelsCounts.keys():
-    #         labelsCounts[currentLabel] = 0
-    #     labelsCounts[currentLabel] += 1
-    # shannonEnt = 0.0
-    # for key in labelsCounts:
-    #     prob = float(labelsCounts[key])/numEntries
-    #     shannonEnt -= prob * log(prob, 2)
+    numEntries = len(dataSet)   #返回数据集的行数
+    labelsCounts = {}           #保存每个标签(Label)出现次数的字典
+    for featVec in dataSet:     #对每组特征向量进行统计
+        currentLabel = featVec[-1]  #提取标签(Label)信息
+        if currentLabel not in labelsCounts.keys(): #如果标签(Label)没有放入统计次数的字典,添加进去
+            labelsCounts[currentLabel] = 0
+        labelsCounts[currentLabel] += 1 #Label计数
+    shannonEnt = 0.0    #经验熵(香农熵)
+    for key in labelsCounts:    #计算香农熵
+        prob = float(labelsCounts[key])/numEntries  #选择该标签(Label)的概率
+        shannonEnt -= prob * log(prob, 2)   #利用公式计算
     # -----------计算香农熵的第一种实现方式end--------------------------------------------------------------------------------
 
     # # -----------计算香农熵的第二种实现方式start--------------------------------------------------------------------------------
     # # 统计标签出现的次数
     #eg:Counter({'no': 3, 'yes': 2})
-    label_count = Counter(data[-1] for data in dataSet)
+    # label_count = Counter(data[-1] for data in dataSet)
     # # 计算概率
-    probs = [float(p[1]) / len(dataSet) for p in label_count.items()]
+    # probs = [float(p[1]) / len(dataSet) for p in label_count.items()]
     # # 计算香农熵
-    shannonEnt = sum([-p * log(p, 2) for p in probs])
+    # shannonEnt = sum([-p * log(p, 2) for p in probs])
     # -----------计算香农熵的第二种实现方式end--------------------------------------------------------------------------------
     return shannonEnt
 
@@ -138,6 +138,7 @@ demo:可以看出infoGain信息增益0的时候是比较大的 所以最好的�
 输出：infoGain= 0.419973094022 bestFeature= 0 0.970950594455 0.550977500433
     infoGain= 0.170950594455 bestFeature= 1 0.970950594455 0.8
     最后返回的最好的数据集bestFeature=0
+    对比我们自己计算的结果，发现结果完全正确！最优特征的索引值为0，也就是特征 no surfacing:不露出水面是否可以生成？
 '''
 def chooseBestFeatureToSplit(dataSet):
     # -----------选择最优特征的第一种方式 start------------------------------------
@@ -224,11 +225,11 @@ def majorityCnt(classList):
 @return: 
 '''
 def createTree(dataSet, labels):
-    #返回数据集中最后一列的值
+    #返回数据集中最后一列的值 去便签分类
     # eg classList:['yes', 'yes', 'no', 'no', 'no']
     classList = [example[-1] for example in dataSet]
     # 如果数据集的最后一列的第一个值出现的次数=整个集合的数量，也就说只有一个类别，就只直接返回结果就行
-    # 第一个停止条件：所有的类标签(Label)完全相同，则直接返回该类标签。
+    # 第一个停止条件：所有的类标签(Label)完全相同，则直接返回该类标签停止划分。
     # count() 函数是统计括号中的值在list中出现的次数
     # eg: classList:['yes', 'yes'] classList.count(classList[0])== len(classList)=2直接返回'yes'
     if classList.count(classList[0]) == len(classList):
@@ -246,6 +247,7 @@ def createTree(dataSet, labels):
     myTree = {bestFeatLabel: {}}
     # 注：labels列表是可变对象，在PYTHON函数中作为参数时传址引用，能够被全局修改
     # 所以这行代码导致函数外的同名变量被删除了元素，造成例句无法执行，提示'no surfacing' is not in list
+    #删除已经使用特征标签
     del(labels[bestFeat])
     # 取出最优列，然后它的branch做分类
     featValues = [example[bestFeat] for example in dataSet]
@@ -259,7 +261,7 @@ def createTree(dataSet, labels):
         # print('myTree', value, myTree)
     return myTree
 '''
-@description: 给输入的节点，进行分类
+@description: 给输入的节点，进行分类 /使用决策树执行分类
 @param {inputTree  决策树模型 eg:{'no surfacing': {0: 'no', 1: {'flippers': {0: 'no', 1: 'yes'}}}}
         featLabels Feature标签对应的名称 eg:['no surfacing', 'flippers']
         testVec    测试输入的数据 eg:[1,1]} 
