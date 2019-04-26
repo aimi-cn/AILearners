@@ -1,10 +1,10 @@
 # <p align="center">AIMI-CN 推荐AI学习内容</p>
 
-<div align=center><img width = '381' height ='163' src =data/otherImages/logo.png/></div>
+<div align=center><img width = '381' height ='163' src =img/otherImages/logo.png/></div>
 
 ## 组织介绍：
 
-**AIMI-CN AI学习交流群【1015286623】<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=e0babfbb0e942a7ab871c51a13436fb5689aa4b0d8776641c8ba996d84c53385"><img border="0" src="data/otherImages/group.png" alt="AI~AIMICN" title="AI~AIMICN"></a>**
+**AIMI-CN AI学习交流群【1015286623】<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=e0babfbb0e942a7ab871c51a13436fb5689aa4b0d8776641c8ba996d84c53385"><img border="0" src="img/otherImages/group.png" alt="AI~AIMICN" title="AI~AIMICN"></a>**
 
 ## 算法与人生 [@bidongqinxian](https://github.com/bidongqinxian)
 
@@ -18,11 +18,11 @@
 
 为你打开机器学习的大门~
 
-[**源码详细解刨**](https://github.com/aimi-cn/AILearners/tree/master/blog)
+[**源码详细解刨**](https://github.com/aimi-cn/AILearners/tree/master/blog/ml/jqxxsz)
 
 [机器学习实战书籍](https://github.com/aimi-cn/AILearners/tree/master/books)
 
-[源码和数据集下载](https://github.com/aimi-cn/AILearners/tree/master/data/sourceData)
+[源码和数据集下载](https://github.com/aimi-cn/AILearners/tree/master/data/ml/jqxxsz/sourceData)
 
 ## 斯坦福cs224n **2019**《基于深度学习的NLP》课程笔记、课后作业、学习资料 [@Guokaijie](https://github.com/abc907558136) [@changan](https://github.com/stuchangan)
 
