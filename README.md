@@ -1,6 +1,6 @@
 # <p align="center">AIMI-CN 推荐AI学习内容</p>
 
-<div align=center><img width = '600' height ='200' src =img/otherImages/AIMI-logo.png/></div>
+<div align=center><img width = '468' height ='169' src =img/otherImages/AIMI-logo.png/></div>
 
 ## 组织介绍：
 
