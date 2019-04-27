@@ -60,7 +60,7 @@ for synset in wn.synsets("good"):
 
   例如：wicked, badass, nifty, wizard, genius, ninja, bombest
 
-  不能与时俱进
+-	不能与时俱进
 
 - 主观性
 
@@ -72,7 +72,7 @@ for synset in wn.synsets("good"):
 
 在传统的自然语言处理中，我们把词语看作离散的符号:hotel, conference, motel – a localist representation
 
-![1556277878961](C:\Users\gkj\AppData\Roaming\Typora\typora-user-images\1556277878961.png)
+![01_01](../../../img/nlp/cs224n/01introduction/01_01.png)
 
 向量维数=词汇表中单词的数量(如500,000)
 
@@ -82,7 +82,7 @@ for synset in wn.synsets("good"):
 
 但是，
 
-![1556278099742](C:\Users\gkj\AppData\Roaming\Typora\typora-user-images\1556278099742.png)
+![01_02](../../../img/nlp/cs224n/01introduction/01_02.png)
 
 这两个向量是**正交**的。对于one-hot向量，没有**相似性**概念!
 
@@ -99,7 +99,7 @@ for synset in wn.synsets("good"):
 
 使用w的许多contexts来构建w的表示
 
-![1556278562922](C:\Users\gkj\AppData\Roaming\Typora\typora-user-images\1556278562922.png)
+![01_03](../../../img/nlp/cs224n/01introduction/01_03.png)
 
 ### 三、词向量（word2vec）介绍
 
@@ -111,7 +111,7 @@ for synset in wn.synsets("good"):
 
 - 词的含义作为一个神经词向量——可视化
 
-![1556279078631](C:\Users\gkj\AppData\Roaming\Typora\typora-user-images\1556279078631.png)
+![01_04](../../../img/nlp/cs224n/01introduction/01_04.png)
 
 #### 2.word2vec回顾
 
@@ -131,7 +131,7 @@ Word2vec (Mikolov et al. 2013)是一个学习单词向量的框架
 
 
 
-![1556281464315](1556281464315.png)
+![01_05](../../../img/nlp/cs224n/01introduction/01_05.png)
 
 
 
@@ -139,7 +139,7 @@ Word2vec (Mikolov et al. 2013)是一个学习单词向量的框架
 
 对于每个位置t= 1，…，T，预测一个固定大小为m的窗口、中心词为w_j，预测context words：
 
-![1556281972715](C:\Users\gkj\AppData\Roaming\Typora\typora-user-images\1556281972715.png)
+![01_06](../../../img/nlp/cs224n/01introduction/01_06.png)
 
 **注：**
 
@@ -162,7 +162,7 @@ $$
 P(o|c)=\frac{exp(u _o^Tv_c)}{\sum_{w\in V}exp(u _w^Tv_c)}
 $$
 
-![1556284884279](C:\Users\gkj\AppData\Roaming\Typora\typora-user-images\1556284884279.png)
+![01_07](../../../img/nlp/cs224n/01introduction/01_07.png)
 
 #### 4.softmax function
 
@@ -182,7 +182,7 @@ softmax function将任意值x_i映射到概率分布p_i上
 
 为了训练模型，我们调整参数使损失最小化。例如，对于两个参数上的一个简单凸函数，等高线表示目标函数的级别
 
-![1556285603734](C:\Users\gkj\AppData\Roaming\Typora\typora-user-images\1556285603734.png)
+![01_08](../../../img/nlp/cs224n/01introduction/01_08.png)
 
 #### 1.训练模型:计算**所有**向量梯度
 
