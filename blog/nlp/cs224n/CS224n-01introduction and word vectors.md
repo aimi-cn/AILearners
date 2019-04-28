@@ -148,8 +148,9 @@ Word2vec (Mikolov et al. 2013)是一个学习单词向量的框架
 
 **因此，我们想要得到目标函数的最小值**:
 $$
-J(θ)=-\frac{1}{T}\sum^T_{t=1}\sum_{{-m\le j\le m，\\j\neq0}}logP(w_{t+j}|w_t;\theta)
+J(θ)=-\frac{1}{T}\sum^T_{t=1}\sum_{{-m\le j\le m，\\j\neq0}}logP(w_{t+j}|w_t;\theta))
 $$
+
 
 ![01_08](../../../img/nlp/cs224n/01introduction/01_08.png)
 
@@ -182,8 +183,9 @@ softmax function将任意值x_i映射到概率分布p_i上
 
 #### 2.word2vec梯度推导
 - 明确我们的目标:通过训练模型，即改变参数θ的值，来**最小化**$J(\theta)$
-  
-  $$J(θ)=-\frac{1}{T}\sum^T_{t=1}\sum_{{-m\le j\le m，\\j\neq0}}logP(w_{t+j}|w_t;\theta)$$
+$$
+J(θ)=-\frac{1}{T}\sum^T_{t=1}\sum_{{-m\le j\le m,j\neq0}}logP(w_{t+j}|w_t;\theta)
+$$
 
 - 问题：如何计算P？
 - 答案：对于每个单词w，我们将使用两个向量：
@@ -191,21 +193,27 @@ softmax function将任意值x_i映射到概率分布p_i上
   - $u_w$:当w是上下文词的时，$u_w$代表上文词向量，维度设为d维，故对于上下文词o，对应的词向量为$u_o$
   - 一共用V个词汇
 - 故计算$P(w_{t+j}|w_t)$，相当于计算对于中心词c和上下文词o时的概率，即：
+  
 $$
 P(o|c)=\frac{exp(u _o^Tv_c)}{\sum_{w\in V}exp(u _w^Tv_c)}
 $$
+
 	两个单词越相似，点积越大。向量点积定义如下：
 	$u^T\cdot v=\sum_{i=1}^Mu_i\times v_i$
 - **这里只计算logP对$v_c$向量的偏导**（大家可以自己做对$u_o$的偏导），用向量表示所有的参数，有V个单词，d维向量。每个单词有2个向量。参数个数一共是2dV个。
 ---
 推导过程如下:
+
 $$\frac { \partial} {\partial v_c} \log P(o \mid c)
 = \frac { \partial} {\partial v_c} \log \frac{\exp(u_o^T \cdot v_c)} {\sum_{w=1}^V \exp(u_w^T \cdot v_c)}
  =  \underbrace { \frac { \partial} {\partial v_c} \log \exp (u_o^T \cdot v_c) }_{1}
- -   \underbrace { \frac { \partial} {\partial v_c} \log \sum_{w=1}^V \exp(u_w^T \cdot v_c) }_{2}$$
+ -   \underbrace { \frac { \partial} {\partial v_c} \log \sum_{w=1}^V \exp(u_w^T \cdot v_c) }_{2}
+$$
+
  -   部分1推导结果为:$u_0$（注：v，u均为矢量，有d维，所以这里为多元微积分求导）
  -   部分2推导：
 ![01-11](../../../img/nlp/cs224n/01introduction/01_11.png)
+
 注：公式中的x为避免和前面的i重复。
 所以，综合起来可以求得，单词o是单词c的上下文概率
 logP(o∣c)，对center向量$v_c$的偏导：
