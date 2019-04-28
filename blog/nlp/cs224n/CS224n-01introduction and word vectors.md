@@ -1,6 +1,3 @@
-<script type="text/javascript"
-src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
 
 ## CS224n-01课程简介和词向量
 
