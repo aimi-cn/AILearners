@@ -206,8 +206,7 @@ $$
 
 $$\frac { \partial} {\partial v_c} \log P(o \mid c)
 = \frac { \partial} {\partial v_c} \log \frac{\exp(u_o^T \cdot v_c)} {\sum_{w=1}^V \exp(u_w^T \cdot v_c)}
- =  \underbrace { \frac { \partial} {\partial v_c} \log \exp (u_o^T \cdot v_c) }_{1}
- -   \underbrace { \frac { \partial} {\partial v_c} \log \sum_{w=1}^V \exp(u_w^T \cdot v_c) }_{2}
+ =  \underbrace { \frac { \partial} {\partial v_c} \log \exp (u_o^T \cdot v_c) }_{1}-\underbrace { \frac { \partial} {\partial v_c} \log \sum_{w=1}^V \exp(u_w^T \cdot v_c) }_{2}
 $$
 
  -   部分1推导结果为:$u_0$（注：v，u均为矢量，有d维，所以这里为多元微积分求导）
