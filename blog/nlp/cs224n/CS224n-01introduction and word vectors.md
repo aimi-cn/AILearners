@@ -6,7 +6,6 @@
 - word2vec介绍
 - word2vec目标函数梯度
 - 优化基础
-- word vectors
 
 ### 一、课程介绍
 
@@ -147,9 +146,7 @@ Word2vec (Mikolov et al. 2013)是一个学习单词向量的框架
 - 目标函数相比于上面的似然函数，前面加了一个负号，由最大值改为求最小值，这点并没有很大区别
 
 **因此，我们想要得到目标函数的最小值**:
-$$
-J(θ)=-\frac{1}{T}\sum^T_{t=1}\sum_{{-m\le j\le m，\\j\neq0}}logP(w_{t+j}|w_t;\theta))
-$$
+![](../../../img/nlp/cs224n/01introduction/01_07.png)
 
 
 ![01_08](../../../img/nlp/cs224n/01introduction/01_08.png)
@@ -194,29 +191,28 @@ $$
   - 一共用V个词汇
 - 故计算$P(w_{t+j}|w_t)$，相当于计算对于中心词c和上下文词o时的概率，即：
   
-$$
-P(o|c)=\frac{exp(u _o^Tv_c)}{\sum_{w\in V}exp(u _w^Tv_c)}
-$$
+![01_eq1](../../../img/nlp/cs224n/01introduction/01_eq1.png)
 
 	两个单词越相似，点积越大。向量点积定义如下：
-	$u^T\cdot v=\sum_{i=1}^Mu_i\times v_i$
+![/01_eq2](../../../img/nlp/cs224n/01introduction/01_eq2.png)
 - **这里只计算logP对$v_c$向量的偏导**（大家可以自己做对$u_o$的偏导），用向量表示所有的参数，有V个单词，d维向量。每个单词有2个向量。参数个数一共是2dV个。
+
+
 ---
+
 推导过程如下:
 
-$$\frac { \partial} {\partial v_c} \log P(o \mid c)
-= \frac { \partial} {\partial v_c} \log \frac{\exp(u_o^T \cdot v_c)} {\sum_{w=1}^V \exp(u_w^T \cdot v_c)}
- =  \underbrace { \frac { \partial} {\partial v_c} \log \exp (u_o^T \cdot v_c) }_{1}-\underbrace { \frac { \partial} {\partial v_c} \log \sum_{w=1}^V \exp(u_w^T \cdot v_c) }_{2}
-$$
+![01_eq3](../../../img/nlp/cs224n/01introduction/01_eq3.png)
 
  -   部分1推导结果为:$u_0$（注：v，u均为矢量，有d维，所以这里为多元微积分求导）
  -   部分2推导：
 ![01-11](../../../img/nlp/cs224n/01introduction/01_11.png)
 
-注：公式中的x为避免和前面的i重复。
-所以，综合起来可以求得，单词o是单词c的上下文概率
+注：公式中的x为避免和前面的i重复。所以，综合起来可以求得，单词o是单词c的上下文概率
 logP(o∣c)，对center向量$v_c$的偏导：
+
 ![01-12](../../../img/nlp/cs224n/01introduction/01_12.png)
+
 实际上偏导是，单词o的上下文词向量，减去，所有单词x的上下文向量乘以x作为c的上下文向量的概率。
 
 -	总体梯度计算:
@@ -261,10 +257,13 @@ logP(o∣c)，对center向量$v_c$的偏导：
 
 #### 2.具体细节
 -	更新方程（以矩阵表示）
+
 ![01_16](../../../img/nlp/cs224n/01introduction/01_16.png)
 -	更新方程（对于单个参数）
+
 ![01_17](../../../img/nlp/cs224n/01introduction/01_17.png)
 -	算法
+
 ![01_18](../../../img/nlp/cs224n/01introduction/01_18.png)
 
 #### 4.随机梯度下降
