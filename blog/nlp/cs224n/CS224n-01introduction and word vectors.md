@@ -149,20 +149,10 @@ Word2vec (Mikolov et al. 2013)是一个学习单词向量的框架
 
 **因此，我们想要得到目标函数的最小值**:
 $$
-J(θ)=-\frac{1}{T}\sum^T_{t=1}\sum_{\substack{-m\le j\le m \\j\neq0}}logP(w_{t+j}|w_t;\theta)
+J(θ)=-\frac{1}{T}\sum^T_{t=1}\sum_{{-m\le j\le m，\\j\neq0}}logP(w_{t+j}|w_t;\theta)
 $$
 
-- 问题：如何计算P？
-- 答案：对于每个单词w，我们将使用两个向量：
-  - v_w，当w是中心词的时候
-  - u_w，当w是上下文词的时候
-- 此时，对于中心词c和上下文词o:
-
-$$
-P(o|c)=\frac{exp(u _o^Tv_c)}{\sum_{w\in V}exp(u _w^Tv_c)}
-$$
-
-![01_07](../../../img/nlp/cs224n/01introduction/01_07.png)
+![01_08](../../../img/nlp/cs224n/01introduction/01_08.png)
 
 #### 4.softmax function
 
@@ -172,20 +162,110 @@ softmax(x_i)=\frac{exp(x_i)}{\sum_{j=1}^nexp(x_j)}=p_i
 $$
 softmax function将任意值x_i映射到概率分布p_i上
 
-- Exponentiation makes anything positive
+- exp会让所有数变为正数
+- softmax之所以叫softmax，是因为指数会让大的数越大，小的数越小。
+- 一般用于深度学习中
 
-- “max” because amplifies probability of largest x_i
-- “soft” because still assigns some probability to smaller x_i
-- Frequently used in Deep Learning
-
-### 四、通过优化参数来训练模型
+### 四、word2vec目标函数梯度
 
 为了训练模型，我们调整参数使损失最小化。例如，对于两个参数上的一个简单凸函数，等高线表示目标函数的级别
 
-![01_08](../../../img/nlp/cs224n/01introduction/01_08.png)
+![01_09](../../../img/nlp/cs224n/01introduction/01_09.png)
 
 #### 1.训练模型:计算**所有**向量梯度
 
-- 回忆:θ表示在一个长向量中所有模型参数
-- 
+- 回顾:θ表示在一个长向量中所有模型参数，在本个例子中有d维的向量和V个单词。
+- 我们沿着梯度对这些参数进行优化
 
+![01_10](../../../img/nlp/cs224n/01introduction/01_10.png)
+
+注：每个单词都有两个向量（一个为中心词向量，一个为上下文词向量），而每个词向量的维度为d
+
+#### 2.word2vec梯度推导
+- 明确我们的目标:通过训练模型，即改变参数θ的值，来**最小化**$J(\theta)$
+  
+  $$J(θ)=-\frac{1}{T}\sum^T_{t=1}\sum_{{-m\le j\le m，\\j\neq0}}logP(w_{t+j}|w_t;\theta)$$
+
+- 问题：如何计算P？
+- 答案：对于每个单词w，我们将使用两个向量：
+  - $v_w$:当w是中心词的时候，$v_w$代表中心词向量，维度设为d维（本课程中设为100维特征，现google最新已为300维），故对于中心词c，对应的词向量为$v_c$
+  - $u_w$:当w是上下文词的时，$u_w$代表上文词向量，维度设为d维，故对于上下文词o，对应的词向量为$u_o$
+  - 一共用V个词汇
+- 故计算$P(w_{t+j}|w_t)$，相当于计算对于中心词c和上下文词o时的概率，即：
+$$
+P(o|c)=\frac{exp(u _o^Tv_c)}{\sum_{w\in V}exp(u _w^Tv_c)}
+$$
+	两个单词越相似，点积越大。向量点积定义如下：
+	$u^T\cdot v=\sum_{i=1}^Mu_i\times v_i$
+- **这里只计算logP对$v_c$向量的偏导**（大家可以自己做对$u_o$的偏导），用向量表示所有的参数，有V个单词，d维向量。每个单词有2个向量。参数个数一共是2dV个。
+---
+推导过程如下:
+$$\frac { \partial} {\partial v_c} \log P(o \mid c)
+= \frac { \partial} {\partial v_c} \log \frac{\exp(u_o^T \cdot v_c)} {\sum_{w=1}^V \exp(u_w^T \cdot v_c)}
+ =  \underbrace { \frac { \partial} {\partial v_c} \log \exp (u_o^T \cdot v_c) }_{1}
+ -   \underbrace { \frac { \partial} {\partial v_c} \log \sum_{w=1}^V \exp(u_w^T \cdot v_c) }_{2}$$
+ -   部分1推导结果为:$u_0$（注：v，u均为矢量，有d维，所以这里为多元微积分求导）
+ -   部分2推导：
+![01-11](../../../img/nlp/cs224n/01introduction/01_11.png)
+注：公式中的x为避免和前面的i重复。
+所以，综合起来可以求得，单词o是单词c的上下文概率
+logP(o∣c)，对center向量$v_c$的偏导：
+![01-12](../../../img/nlp/cs224n/01introduction/01_12.png)
+实际上偏导是，单词o的上下文词向量，减去，所有单词x的上下文向量乘以x作为c的上下文向量的概率。
+
+-	总体梯度计算:
+
+	-	在一个window里面，对中间词汇$v_c$求了梯度， 然后再对各个上下文词汇$u_o$求梯度（本文中没有写，感兴趣可自行计算）。然后更新这个window里面用到的参数。
+	通常在每个窗口中，我们将计算该窗口中使用的所有参数的更新。例如：
+
+	![01_13](../../../img/nlp/cs224n/01introduction/01_13.png)
+	
+-	梯度下降
+有了梯度之后，参数减去梯度，就可以朝着最小的方向走了。机器学习梯度下降
+![01_14](../../../img/nlp/cs224n/01introduction/01_14.png)
+
+#### 3.关于word2vec的更多细节
+-	为什么是两个向量？
+
+	更容易去优化，最后求其平均值。
+
+-	两个相关模型，本文使用的是第一种：
+
+	1.Skip-grams (SG)：通过中心词预测上下文词
+
+	2.Continuous Bag of Words (CBOW）：从上下文词包中预测中心词
+-	训练的额外方法：
+
+	1.将常见的单词组合（word pairs）或者词组作为单个“word”来处理。
+
+	2.对高频词进行抽样来减少训练样本的个数。
+
+	3.对优化目标采用“negative sampling”方法，这样每个训练样本的训练只会更新一小部分的模型权重，从而降低计算负担。
+	
+	4.目前:专注于朴素的softmax(更简单的训练方法)
+
+	详细内容请参考：[理解 Word2Vec 之 Skip-Gram 模型](https://zhuanlan.zhihu.com/p/27234078)
+
+### 五、优化梯度
+#### 1.方法
+-	我们最小化目标函数：$J(\theta)$
+-	梯度下降是一种最小化$J(\theta)$的算法
+-	思想：对于当前θ值，计算$J(\theta)$的值，然后在**负梯度的方向**上迈步
+![01_15](../../../img/nlp/cs224n/01introduction/01_15.png)
+
+#### 2.具体细节
+-	更新方程（以矩阵表示）
+![01_16](../../../img/nlp/cs224n/01introduction/01_16.png)
+-	更新方程（对于单个参数）
+![01_17](../../../img/nlp/cs224n/01introduction/01_17.png)
+-	算法
+![01_18](../../../img/nlp/cs224n/01introduction/01_18.png)
+
+#### 4.随机梯度下降
+-	问题：$J(\theta)$是语料库中所有窗口的函数（数以亿计），所以计算J(θ)的梯度非常耗费资源，您需要等待很长时间才能进行一次更新，对于几乎所有的神经网络来说，这是一个非常糟糕的方法。
+
+-	解决方法：**随机梯度下降**（Stochastic gradient descent，SGD），即重复示例窗口，并在每个窗口之后更新
+
+随机梯度下降算法：
+
+![01_19](../../../img/nlp/cs224n/01introduction/01_19.png)
