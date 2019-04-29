@@ -29,6 +29,7 @@ cs231n(面向视觉识别的卷积神经网络)课程笔记
 
 ps：做笔记用之前的markdown写  
 ppt稍后上传
+[ppt地址](http://cs231n.stanford.edu/slides/2017/)
 
 ## 4、github目录介绍
 详见：[github文件上传规范](https://github.com/aimi-cn/git_md_learning/blob/master/git_learning/github%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E8%A7%84%E8%8C%8319046.md)
