@@ -4,7 +4,7 @@ cs231n(面向视觉识别的卷积神经网络)课程笔记
 ## 1、人员分布
 [@Fermin]()  
 [@zhangpengju](https://github.com/zharthur)  
-[@suanmeitang](https://github.com/suanmeitang1) 
+[@suanmeitang](https://github.com/suanmeitang1)   
 [@xhh](https://github.com/tjp-xhh)  
 [@wyy](https://github.com/WYY1996)  
  
