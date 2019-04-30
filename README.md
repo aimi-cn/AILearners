@@ -28,8 +28,7 @@
 
 我们一起学习最前沿的NLP~
 
-[cs224n课程详细笔记]()  
-[cs224n课程课后作业解析]()  
+[cs224n课程详细笔记](https://github.com/aimi-cn/AILearners/tree/master/blog/nlp/cs224n)   
 [cs224n学习资料](https://pan.baidu.com/s/1ADcGT4sljV1lYPWNhFXs2Q )	 提取码：e234  
 [youtube视频链接](https://www.youtube.com/watch?v=8rXD5-xhemo&list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z&index=1)	国内可以在B站找到
 
