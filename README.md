@@ -3,6 +3,8 @@
 <div align=center><img width = '468' height ='169' src =img/otherImages/AIMI-logo.png/></div>
 
 ## 组织介绍：
+我们是一群爱好AI学习的爱好者！在这里我们一起学习、互相督促、一起装逼~   
+我们更新的一些AI相关的笔记~ 包括算法、机器学习、深度学习、自然语言处理，之后也会更新更多的笔记让大家一起学习~
 
 **AIMI-CN AI学习交流群【1015286623】<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=e0babfbb0e942a7ab871c51a13436fb5689aa4b0d8776641c8ba996d84c53385"><img border="0" src="img/otherImages/group.png" alt="AI~AIMICN" title="AI~AIMICN"></a>**
 
@@ -24,7 +26,15 @@
 
 [源码和数据集下载](https://github.com/aimi-cn/AILearners/tree/master/data/ml/jqxxsz/sourceData)
 
-## 斯坦福cs224n **2019**《基于深度学习的NLP》课程笔记、课后作业、学习资料 [@Guokaijie](https://github.com/abc907558136) [@changan](https://github.com/stuchangan)
+## 吴恩达老师机器学习笔记[@JermaineZ]()
+
+## 《机器学习》周志华西瓜书笔记[@liuxinyi222]()
+
+## 斯坦福cs231n 面向视觉识别的卷积神经网络课程笔记[@5people]()
+
+## 斯坦福cs224n **2019**《基于深度学习的NLP》课程笔记、课后作业、学习资料 [@Guokaijie](https://github.com/abc907558136) 
+
+## python自然语言处理实战书籍代码笔记[@changan](https://github.com/stuchangan)
 
 我们一起学习最前沿的NLP~
 
