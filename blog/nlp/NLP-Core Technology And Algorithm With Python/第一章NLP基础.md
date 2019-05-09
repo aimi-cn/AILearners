@@ -221,13 +221,13 @@ NLP 是计算机领域与人工智能领域中的一个重要分支 人工智能
 AIMI-CN AI学习交流群【1015286623】 获取更多AI资料 
 扫码加群：
 
-![](..\..\..\img\otherImages\1556097925376.png)
+![](../../../img/otherImages/1556097925376.png)
 
 分享技术，乐享生活：我们的公众号每周推送“AI”系列资讯类文章，欢迎您的关注！
 
 
 
-![](..\..\..\img\otherImages\qrcode.jpg)
+![](../../../img/otherImages/qrcode.jpg)
 
 
 
