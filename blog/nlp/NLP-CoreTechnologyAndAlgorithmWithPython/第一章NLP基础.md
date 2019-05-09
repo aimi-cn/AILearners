@@ -17,7 +17,7 @@
 
 NLP（Natural Language Processing，自然语言处理）是计算机科学领域以及人工智能领域的一个重要的研究方向，它研究用计算机来处理、理解以及运用人类语言（如中文、英文等），达到人与计算机之间进行有效通讯。所谓“自然”乃是寓意自然进化形成，为了区分一些人造语言（如：c++、java等人为设计的语言）这些年， NLP 研究取得了长足的进步，逐渐发展成独立的学科，从自然语言的角度出发，NLP 基本可以分为两个部分 自然语言处理以及自然语言生成，演化为理解和生成文本的任务，如图1-1 所示
 
-![](..\..\..\img\nlp\NLP-CoreTechnologyAandAlgorithmWithPython\1NLPbasis\1_01.png)
+![](../../../img\nlp/NLP-CoreTechnologyAandAlgorithmWithPython/1NLPbasis/1_01.png)
 
 自然语言的理解是个综合的系统工程，它又包含了很多细分学科，有代表声音的音系学，代表构词法的词态学代表语句结构的句法学，代表理解的语义句法学和语用学。
 
@@ -55,7 +55,7 @@ NLP 可以被应用于很多领域，这里大概总结出以下几种通用的�
 
 知识图谱（ Knowledge Graph/Va ult ）又称科学知识图谱，在图书情报界称为知识域可视化或知识领域映射地图，是显示知识发展进程与结构关系的一系列各种不同的图形，用可视化技术描述知识资源及其载体，挖掘、分析 构建、绘制和显示知识及它们之间的相互联系 知识图谱的 般表现形式如图 1-2 所示
 
-![](..\..\..\img\nlp\NLP-CoreTechnologyAandAlgorithmWithPython\1NLPbasis\1_02.png)
+![](../../../img/nlp/NLP-CoreTechnologyAandAlgorithmWithPython/1NLPbasis/1_02.png)
 
 
 
@@ -149,7 +149,7 @@ NLP 的发展大致经历了3个阶段： 1956 年以前的萌芽期，1980 年�
   系统通过多回合对话 ，跟用户进行聊天、回答、完成某项任务 主要涉及用户意图理解、通用聊天引擎、问答引擎、对话管理等技术。此外，为了体现上下文相关，要具备多轮到话能力 同时，为了体现个性化，对话系统还需要
   基于用户画像做个性化回复。知识结构结构图如图1-3所示。
 
-  ![](..\..\..\img\nlp\NLP-CoreTechnologyAandAlgorithmWithPython\1NLPbasis\1_03.png)
+  ![](../../../img/nlp/NLP-CoreTechnologyAandAlgorithmWithPython/1NLPbasis/1_03.png)
 
   
 
@@ -221,13 +221,13 @@ NLP 是计算机领域与人工智能领域中的一个重要分支 人工智能
 AIMI-CN AI学习交流群【1015286623】 获取更多AI资料 
 扫码加群：
 
-![](..\..\..\img\otherImages\1556097925376.png)
+![](../../../img/otherImages/1556097925376.png)
 
 分享技术，乐享生活：我们的公众号每周推送“AI”系列资讯类文章，欢迎您的关注！
 
 
 
-![](..\..\..\img\otherImages\qrcode.jpg)
+![](../../../img/otherImages/qrcode.jpg)
 
 
 
