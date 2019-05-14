@@ -234,11 +234,7 @@ Intrinsic评判标准除了上述的a:b=c:? 查看语义语法以外，还有查
 
 读者若是有兴趣可以参考Linear Algebraic Structure of Word Senses, with Applications to Polysemy。该文章讲述了如何将多义词用多个词向量来表达。
 
-有趣的是，一个多义词的词向量等于其各个意思的词向量的加权和
-
-![pike](../../../img/nlp/cs224n/02word_vectors/pike.png)
-
-## 总结
+## 小结
 
 计算词向量的方法多种多样。定义并最小化一个目标函数，从而学习到某些参数。这是深度学习中最常见的方法。负采样方法将多分类问题变为二分类问题，避免了计算softmax函数，大大降低了计算量。
 Glove算法结合了共现矩阵与优化目标函数。由Glove算法的到的词向量表现效果很好。
