@@ -503,11 +503,11 @@ array([60, 60, 90])
 AIMI-CN AI学习交流群【1015286623】 获取更多AI资料 
 扫码加群：
 
-![](F:/GIT/GItWorkspace/AILearners/img/otherImages/1556097925376.png)
+![](../../../img/otherImages/1556097925376.png)
 
 分享技术，乐享生活：我们的公众号每周推送“AI”系列资讯类文章，欢迎您的关注！
 
 
 
-![](F:/GIT/GItWorkspace/AILearners/img/otherImages/qrcode.jpg)
+![](../../../img/otherImages/qrcode.jpg)
 
