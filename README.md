@@ -68,7 +68,7 @@
 [代码以及书籍下载地址](https://github.com/aimi-cn/AILearners/tree/master/data/nlp/NLP-Core%20Technology%20And%20Algorithm%20With%20Python)
 
 
-# AIMI推荐AI学习路线：机器学习、深度学习、NLP等推荐的学习资料以及学习方向
+# AIMI-CN推荐AI学习路线：机器学习、深度学习、NLP等推荐的学习资料以及学习方向
 
 观看先决条件：  
 **选择，方法，坚持**  
@@ -145,8 +145,6 @@
 [Hung-yi Lee](http://speech.ee.ntu.edu.tw/~tlkagk/courses.html)
 
 当然这些国内都会有对应大佬有视频的翻译(b站) 感兴趣的自己找找	
-
-# 二、深度学习
 
 # 三、NLP学习
 
