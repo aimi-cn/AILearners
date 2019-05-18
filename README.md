@@ -33,7 +33,7 @@
 
 让你用代码来体验机器学习~
 
-[**课程代码详细解刨**](https://github.com/aimi-cn/AILearners/tree/master/blog/ml/jqxxsz)
+[**课程详细笔记地址**](https://github.com/aimi-cn/AILearners/tree/master/blog/ml/jqxxsz)
 
 [机器学习实战书籍](https://github.com/aimi-cn/AILearners/tree/master/books)
 
