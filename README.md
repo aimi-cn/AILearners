@@ -57,12 +57,15 @@
 我们一起学习最前沿的NLP知识~
 
 [cs224n课程详细笔记](https://github.com/aimi-cn/AILearners/tree/master/blog/nlp/cs224n)   
+
 [cs224n学习资料](https://pan.baidu.com/s/1ADcGT4sljV1lYPWNhFXs2Q )	 提取码：e234  
+
 [youtube视频链接](https://www.youtube.com/watch?v=8rXD5-xhemo&list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z&index=1)	国内可以在B站找到
 
 ## 2、python自然语言处理实战书籍代码笔记[@changan](https://github.com/stuchangan)
 
 在实战代码中学习NLP~
+
 [详细笔记地址](https://github.com/aimi-cn/AILearners/tree/master/blog/nlp/NLP-Core%20Technology%20And%20Algorithm%20With%20Python) 
 
 [代码以及书籍下载地址](https://github.com/aimi-cn/AILearners/tree/master/data/nlp/NLP-Core%20Technology%20And%20Algorithm%20With%20Python)
