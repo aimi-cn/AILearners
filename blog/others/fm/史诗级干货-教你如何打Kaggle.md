@@ -12,7 +12,9 @@ Kaggle 是一个数据科学竞赛的平台，很多公司会发布一些接近�
 
 **对于我们大部分来说可能没什么基础或者基础不是那么强(大家可以学习机器学习深度学习的话 可以参照我们做的笔记进行学习 [我们提供详细的AI方向笔记和源码供大家学习](https://github.com/aimi-cn/AILearners)) 刚开始就做项目打比赛的话比较有难度 不怕大家嘲笑 我也是这样的 学完机器学习、深度学习之后也没什么实战经验 但是非常想自己去做点什么** 
 
-**在我了解kaggle之后 我发现上面的比赛中有一个模块专门是为新手准备的[链接](https://www.kaggle.com/competitions?sortBy=grouped&group=general&page=1&pageSize=20&category=gettingStarted)叫做Getting Started模块 我们基础不好或者想入门的话 可以先挑战入门的项目 更重要的是这些入门项目中我们可以参加之后看其中的kernels板块 有各路大神分享的自己是怎么写的代码 我们直接可以照这这些大佬的来做 还可以顺便学下英语 哈哈哈 一举两得 那么今天我要做的这个demo就是复现一下Kaggle 入门比赛的Getting Started 的一个手写体识别的Pytorch实现**
+**在我了解kaggle之后 我发现上面的比赛中有一个模块专门是为新手准备的[链接](https://www.kaggle.com/competitions?sortBy=grouped&group=general&page=1&pageSize=20&category=gettingStarted)叫做Getting Started模块见下图 我们基础不好或者想入门的话 可以先挑战入门的项目 更重要的是这些入门项目中我们可以参加之后看其中的kernels板块 有各路大神分享的自己是怎么写的代码 我们直接可以照这这些大佬的来做 选择图中赞多的 还可以顺便学下英语 哈哈哈 一举两得 那么今天我要做的这个demo就是复现一下Kaggle 入门比赛的Getting Started 的一个手写体识别的Pytorch实现**
+
+![](../../../img/otherImages/fm/190525/3.png)
 
 Kaggle 已被 Google 收购，请参阅[《谷歌收购 Kaggle 为什么会震动三界（AI、机器学习、数据科学界）》](https://www.leiphone.com/news/201703/ZjpnddCoUDr3Eh8c.html)
 
@@ -35,7 +37,7 @@ Kaggle 已被 Google 收购，请参阅[《谷歌收购 Kaggle 为什么会震�
 
 项目链接:https://www.kaggle.com/c/digit-recognizer/overview
 
-复现代码的地址：https://www.kaggle.com/kanncaa1/pytorch-tutorial-for-deep-learning-lovers  
+复现的代码的地址：https://www.kaggle.com/kanncaa1/pytorch-tutorial-for-deep-learning-lovers  
 https://www.kaggle.com/kanncaa1/recurrent-neural-network-with-pytorch
 
 由于内容过多 所以我只在这里展示手写体识别的CNN网络实现 完整代码参考地址：
