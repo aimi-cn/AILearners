@@ -12,6 +12,11 @@ import matplotlib.pyplot as plt
 train = pd.read_csv("train.csv",dtype = np.float32,encoding='utf-8')
 targets_numpy = train.label.values
 features_numpy = train.loc[:,train.columns != "label"].values/255 # normalization
+#train_test_split函数用于将矩阵随机划分为训练子集和测试子集，并返回划分好的训练集测试集样本和训练集测试集标签。
+# train_data：被划分的样本特征集
+# train_target：被划分的样本标签
+# test_size：如果是浮点数，在0-1之间，表示样本占比；如果是整数的话就是样本的数量
+# random_state：是随机数的种子。
 features_train, features_test, targets_train, targets_test = train_test_split(features_numpy,
                                                                              targets_numpy,
                                                                              test_size = 0.2,
