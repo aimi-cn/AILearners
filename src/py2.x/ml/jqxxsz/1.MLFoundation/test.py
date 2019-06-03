@@ -23,3 +23,12 @@ def test():
 # -*- encoding: utf-8 -*-
 import numpy as np
 np.zeros((2,3))
+
+
+def reverseWords(s):
+    return ' '.join(i[::-1] for i in s.split())
+            
+
+if __name__ == "__main__":
+    s = "Let's take LeetCode contest"
+    print(reverseWords(s))
