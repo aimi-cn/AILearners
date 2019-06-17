@@ -149,7 +149,7 @@ def smoSimple(dataMatIn, classLabels, C, toler, maxIter):
         #更新迭代次数
         if (alphaPairsChanged == 0): iter_num += 1
         else: iter_num = 0
-        print("迭代次数: %d" % iter_num)
+        print("迭代次数: %d" % iter_num).decode('utf-8').encode('gb2312')
     return b,alphas
 
 '''
