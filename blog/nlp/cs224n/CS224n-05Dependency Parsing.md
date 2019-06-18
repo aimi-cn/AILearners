@@ -63,3 +63,11 @@ Chen and Manning(2014)的工作，是第一个简单、成功的神经依赖解�
 - 对决策序列进行全局、条件随机字段(CRF)样式的推理
 
 这就引出了之后的SyntaxNet和Parsey McParseFace模型。
+
+喜欢的童鞋记得分享给别的小伙伴哈。AIMI-CN AI学习交流群【1015286623】 获取更多AI资料扫码加群：
+
+![](../../../img/otherImages/gkj/QRcode_qq.png)
+
+分享技术，乐享生活：我们的公众号每周推送“AI”系列资讯类文章，欢迎您的关注！
+
+![](../../../img/otherImages/gkj/QRcode_wechart.png)
