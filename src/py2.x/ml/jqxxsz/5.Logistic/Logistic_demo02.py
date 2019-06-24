@@ -34,7 +34,9 @@ def colicTest():
         testLabels.append(float(currLine[-1]))
     # 使用solver优化算法选择参数，只有五个可选参数 我们使用liblinear和sag进行优化
     # max_iter：算法收敛最大迭代次数，int类型，默认为10
+    #  solver='liblinear'---> 使用了开源的liblinear库实现，内部使用了坐标轴下降法来迭代优化损失函数。
     # classifier = LogisticRegression(solver='liblinear',max_iter=10).fit(trainingSet, trainingLabels)
+    # sgd ---> 即随机平均梯度下降，是梯度下降法的变种，和普通梯度下降法的区别是每次迭代仅仅用一部分的样本来计算梯度，适合于样本数据多的时候。
     classifier = LogisticRegression(solver='sag',max_iter=3000).fit(trainingSet, trainingLabels)
     # score方法返回测试之后的正确率
     test_accurcy = classifier.score(testSet, testLabels) * 100
