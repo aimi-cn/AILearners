@@ -18,3 +18,6 @@ AIMI-CN AI学习交流群【1015286623】 获取更多AI资料
 分享技术，乐享生活：我们的公众号每周推送“AI”系列资讯类文章，欢迎您的关注！
 
 ![](../../img/otherImages/qrcode.jpg)
+
+颜色标签：
+<font color=red size=5></font>

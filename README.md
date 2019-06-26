@@ -22,6 +22,12 @@
 
 [源码地址](https://github.com/aimi-cn/AILearners/tree/master/blog/src/py2.x/algorithm)
 
+## 2、剑指Offer算法习题详细解析 [@xiaoming3526](https://github.com/xiaoming3526)
+
+牛客网上刷《剑指Offer》的刷题笔记，旨在提升我们算法能力~
+
+[详细文章地址](https://github.com/aimi-cn/AILearners/tree/master/blog/Algorithm/jianzhi_offer)
+
 ## 二、机器学习方向
 
 ## 1、吴恩达老师机器学习笔记[@JermaineZ](https://github.com/JermaineZ)  [@niuhongying](https://github.com/niuhongying)  [@liuxinyi222](https://github.com/liuxinyi222)
