@@ -13,11 +13,15 @@
 AIMI-CN AI学习交流群【1015286623】 获取更多AI资料 
 扫码加群：
 
-![](../../img/otherImages/1556097925376.png)
+![](https://img-blog.csdnimg.cn/20190626104918486.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JhaWR1XzMxNjU3ODg5,size_16,color_FFFFFF,t_70)
 
 分享技术，乐享生活：我们的公众号每周推送“AI”系列资讯类文章，欢迎您的关注！
 
-![](../../img/otherImages/qrcode.jpg)
+![](https://img-blog.csdnimg.cn/20190625145118737.jpg)
 
+
+![](../../img/otherImages/1556097925376.png)
+
+![](../../img/otherImages/qrcode.jpg)
 颜色标签：
 <font color=red size=5></font>

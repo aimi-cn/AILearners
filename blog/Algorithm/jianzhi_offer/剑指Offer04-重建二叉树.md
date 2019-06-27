@@ -35,7 +35,7 @@
 
 具体看图：
 
-![](../../../img/Algorithm/jianzhi_offer/jzoffer_01_03.png)
+![](../../../img/Algorithm/jianzhi_offer/jzoffer_04_01.png)
 
 
 ### 2、编程实现
