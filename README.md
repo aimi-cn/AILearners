@@ -28,6 +28,8 @@
 
 [详细文章地址](https://github.com/aimi-cn/AILearners/tree/master/blog/Algorithm/jianzhi_offer)
 
+[csdn地址](https://blog.csdn.net/baidu_31657889/article/category/9059648)
+
 ## 二、机器学习方向
 
 ## 1、吴恩达老师机器学习笔记[@JermaineZ](https://github.com/JermaineZ)  [@niuhongying](https://github.com/niuhongying)  [@liuxinyi222](https://github.com/liuxinyi222)
