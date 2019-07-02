@@ -1,4 +1,4 @@
-# 【2019斯坦福CS224N笔记】（6）Language Models and RNNs
+# 【2019斯坦福CS224N笔记】（7）Fancy RNNs
 
 csdn：https://blog.csdn.net/abcgkj
 
@@ -171,7 +171,7 @@ RNNs已经深入到一个维度(它们展开到许多时间步长)，我们也�
 
 ## 小结
 
-本节的内容较多，但是逻辑还是很清楚的，我们来简要回顾一下。首先我们解释了RNN梯度爆炸和消失的原因，由此引出了接下来的主要解决方案——LSTM和GRU。最后我们简单介绍了双向RNN和多层的RNN。下节课我们将介绍Machine Translation, Seq2Seq and Attention。 
+本节的内容较多，但是逻辑还是很清楚的，我们来简要回顾一下。首先我们解释了RNN梯度爆炸和消失的原因，由此引出了接下来的主要解决方案——LSTM和GRU。最后我们简单介绍了双向RNN和多层的RNN。下节课我们将介绍Machine Translation, Seq2Seq and Attention。
 
 以下是本节课的主要参考资料：
 
