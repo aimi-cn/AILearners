@@ -171,7 +171,7 @@ RNNs已经深入到一个维度(它们展开到许多时间步长)，我们也�
 
 ## 小结
 
-本节的内容较多，但是逻辑还是很清楚的，我们来简要回顾一下。首先我们解释了RNN梯度爆炸和消失的原因，由此引出了接下来的主要解决方案——LSTM和GRU。最后我们简单介绍了双向RNN和多层的RNN。
+本节的内容较多，但是逻辑还是很清楚的，我们来简要回顾一下。首先我们解释了RNN梯度爆炸和消失的原因，由此引出了接下来的主要解决方案——LSTM和GRU。最后我们简单介绍了双向RNN和多层的RNN。下节课我们将介绍Machine Translation, Seq2Seq and Attention。 
 
 以下是本节课的主要参考资料：
 
@@ -182,3 +182,11 @@ RNNs已经深入到一个维度(它们展开到许多时间步长)，我们也�
 [一文带你理解LSTM网络](https://github.com/aimi-cn/AILearners/blob/master/blog/others/20190518_LSTM.md)
 
 [RNN梯度消失和爆炸的原因](https://zhuanlan.zhihu.com/p/28687529)
+
+喜欢的童鞋记得分享给别的小伙伴哈。AIMI-CN AI学习交流群【1015286623】 获取更多AI资料扫码加群：
+
+<div align=center><img src="../../../img/otherImages/gkj/QRcode_qq.png" /></div>
+
+分享技术，乐享生活：我们的公众号每周推送“AI”系列资讯类文章，欢迎您的关注！
+
+<div align=center><img src="../../../img/otherImages/gkj/QRcode_wechart.png" /></div>
