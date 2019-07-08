@@ -101,7 +101,7 @@ def lwlr(testPoint, xArr, yArr, k = 1.0):
         weights[j, j] = np.exp(diffMat * diffMat.T/(-2.0 * k**2))
     xTx = xMat.T * (weights * xMat)                                        
     if np.linalg.det(xTx) == 0.0:
-        print("矩阵为奇异矩阵,不能求逆").encode('utf-8').decode('gb2312')
+        print("矩阵为奇异矩阵,不能求逆").decode('utf-8').encode('gb2312')
         return
     ws = xTx.I * (xMat.T * (weights * yMat))                            #计算回归系数
     return testPoint * ws
