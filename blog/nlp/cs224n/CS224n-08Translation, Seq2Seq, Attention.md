@@ -62,7 +62,7 @@ Encoder负责将输入的原文本编码成一个向量（context），该向量
 
 Decoder是一种以编码为条件生成目标句的语言模型，即使用Encoder的最终状态和作为Decoder的初始隐状态。除此之外，Decoder的隐藏层还来源于前一个时刻的隐藏层和前一个预测结果。如下图所示，这是在测试时的Decoder，下文会介绍如何训练：
 
-![](../../../img/nlp/cs224n/08Translation/TIM截图20190708163835.png)
+![](../../../img/nlp/cs224n/08Translation/微信截图_20190709114920.png)
 
 注意:这里的Encoder和Decoder，可以是普通的RNN，也可以是LSTM、GRU或者是Bi-LSTM等等，当然也可以是CNN。层数也可以是多层的。当然，我们不仅可以用同一种神经网络实现编码器和解码器，也可以用不同的网络，如编码器基于CNN，解码器基于RNN。
 
