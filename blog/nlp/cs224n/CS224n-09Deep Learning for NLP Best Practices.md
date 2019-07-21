@@ -1,5 +1,11 @@
 # 【2019斯坦福CS224N笔记】（9）Deep Learning for NLP Best Practices
 
+csdn：https://blog.csdn.net/abcgkj
+
+github：https://github.com/aimi-cn/AILearners
+
+---
+
 本人在看CS224n Lecture9课程后，本节课程主要讲的是Final project和回顾了GRU和LSTM网络。没有特别多的新内容，故在网上找到了一篇国外大佬写的关于NLP实践总结的博文，故翻译之与大家进行分享。
 
 原文作者：Sebastian Ruder
@@ -260,3 +266,11 @@ CNN模型被广泛应用在NLP中的分类任务中。近期发现，由于CNN�
 - 单字翻译:Senrich等人(2016)提出了一种基于字节对编码 (BPE) 的方式将单词划分为字序列。BPE迭代式地合并频繁的符号对，最终将频繁出现的ngram合并成单个符号，从而有效地清除了不在词典中的词。尽管这个方法最初是为了处理罕见的单词，但是处理字单元的模型整体的表现要优于全词系统，对于以字为单位的词汇表大小设置为32,000比较合适。
 
 注意：本文参考文献比较多，查看原文可参考完整的参考文献。
+
+喜欢的童鞋记得分享给别的小伙伴哈。AIMI-CN AI学习交流群【1015286623】 获取更多AI资料扫码加群：
+
+<div align=center><img src="../../../img/otherImages/gkj/QRcode_qq.png" /></div>
+
+分享技术，乐享生活：我们的公众号每周推送“AI”系列资讯类文章，欢迎您的关注！
+
+<div align=center><img src="../../../img/otherImages/gkj/QRcode_wechart.png" /></div>
