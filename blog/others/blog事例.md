@@ -10,12 +10,16 @@
 
 # 2、文末引用
 
+针对CSDN对图像进行屏蔽的事 可以外联github的地址图像
+![qq群](https://github.com/aimi-cn/AILearners/blob/master/img/otherImages/1556097925376.png)
+![二维码]](https://github.com/aimi-cn/AILearners/blob/master/img/otherImages/qrcode.jpg)
+
 AIMI-CN AI学习交流群【1015286623】 获取更多AI资料 
 扫码加群：
 
 ![](https://img-blog.csdnimg.cn/20190626104918486.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JhaWR1XzMxNjU3ODg5,size_16,color_FFFFFF,t_70)
 
-分享技术，乐享生活：我们的公众号每周推送“AI”系列资讯类文章，欢迎您的关注！
+分享技术，乐享生活：我们的公众号‘计算机视觉这件小事’每周推送“AI”系列资讯类文章，欢迎您的关注！
 
 ![](https://img-blog.csdnimg.cn/20190625145118737.jpg)
 
