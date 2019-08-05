@@ -188,6 +188,15 @@ if __name__ == "__main__":
     # filename = 'C:\\Users\\Administrator\\Desktop\\blog\\github\\AILearners\\data\\ml\\jqxxsz\\9.RegTrees\\ex0.txt'
     # plotDataSet1(filename)
 
-    myDat = loadDataSet('C:\\Users\\Administrator\\Desktop\\blog\\github\\AILearners\\data\\ml\\jqxxsz\\9.RegTrees\\ex0.txt')
+    # myDat = loadDataSet('C:\\Users\\Administrator\\Desktop\\blog\\github\\AILearners\\data\\ml\\jqxxsz\\9.RegTrees\\ex0.txt')
+    # myMat = np.mat(myDat)
+    # print(createTree(myMat))
+
+    # myDat = loadDataSet('C:\\Users\\Administrator\\Desktop\\blog\\github\\AILearners\\data\\ml\\jqxxsz\\9.RegTrees\\ex2.txt')
+    # myMat = np.mat(myDat)
+    # print(createTree(myMat))
+
+    myDat = loadDataSet('C:\\Users\\Administrator\\Desktop\\blog\\github\\AILearners\\data\\ml\\jqxxsz\\9.RegTrees\\ex2.txt')
     myMat = np.mat(myDat)
-    print(createTree(myMat))
+    print(createTree(myMat, ops=(10000,4)))
+
