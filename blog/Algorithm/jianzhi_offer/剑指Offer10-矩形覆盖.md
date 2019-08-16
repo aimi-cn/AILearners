@@ -45,10 +45,3 @@ class Solution:
         return b
 ```
 
-
-
-
-
-
-
-
