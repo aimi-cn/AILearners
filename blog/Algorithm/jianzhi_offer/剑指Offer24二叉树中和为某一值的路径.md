@@ -7,7 +7,8 @@
 ## 一、引子
 
 这个系列是我在牛客网上刷《剑指Offer》的刷题笔记，旨在提升下自己的算法能力。  
-查看完整的剑指Offer算法题解析请点击：[剑指Offer完整习题解析](https://blog.csdn.net/baidu_31657889/article/category/9059648)
+查看完整的剑指Offer算法题解析请点击CSDN链接：[剑指Offer完整习题解析](https://blog.csdn.net/baidu_31657889/article/category/9059648)  
+github地址：https://github.com/aimi-cn/AILearners/tree/master/blog/Algorithm/jianzhi_offer
 
 ## 二、题目
 
