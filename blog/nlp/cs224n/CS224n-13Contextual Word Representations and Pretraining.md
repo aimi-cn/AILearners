@@ -88,7 +88,7 @@ transformer的出现主要是为了利用纯attention来解决RNN系列网络无
 
 我们从图中可以看到：和大多数seq2seq模型一样，transformer的结构也是由encoder和decoder组成。最初应用于使用并行语料库进行机器翻译并预测每个单词的翻译。
 
-### Encoder
+### 1.Encoder
 
 Encoder由N=6个相同的layer组成，layer指的就是上图左侧的单元，最左边有个“Nx”，这里是x6个。每个Layer由两个sub-layer组成，分别是multi-head self-attention mechanism和fully connected feed-forward network。其中每个sub-layer都加了residual connection和normalisation，因此可以将sub-layer的输出表示为：
 
@@ -147,6 +147,22 @@ Decoder和Encoder的结构差不多，但是多了一个attention的sub-layer，
 作者这么设计的原因是考虑到在NLP任务重，除了单词的绝对位置，单词的相对位置也非常重要。根据公式sin(α+β)=sinαcosβ+cosαsinβ以及cos(α+β)=cosαcosβ-sinαsinβ，这表明位置k+p的位置向量可以表示为位置k的特征向量的线性变化，这为模型捕捉单词之间的相对位置关系提供了非常大的便利。
 
 Transformer是第一个用纯attention搭建的模型，算法的并行性非常好，并且在翻译任务上也获得了更好的结果，因此Transformer也可以用在NLP的其他任务上。但是，Transformer一味的去除掉了RNN，因此RNN和Transformer的结合也许会更好。
+
+## BERT
+
+Bert模型是Google在2018年10月发布的语言表示模型，Bert在NLP领域横扫了11项任务的最优结果，可以说是最近NLP中最重要的突破。Bert模型的全称是Bidirectional Encoder Representations from Transformers，BERT模型的目标是利用大规模无标注语料训练、获得文本的包含丰富语义信息的Representation，即：文本的语义表示，然后将文本的语义表示在特定NLP任务中作微调，最终应用于该NLP任务。
+
+![](../../../img/nlp/cs224n/13Contextual&#32;Word&#32;Representations&#32;and&#32;Pretraining/微信截图_20190902211956.png)
+
+BERT模型的主要输入是文本中各个字/词的原始词向量，该向量既可以随机初始化，也可以利用Word2Vector等算法进行预训练以作为初始值；输出是文本中各个字/词融合了全文语义信息后的向量表示。
+
+BERT将多个transformer编码器堆叠在一起。BERT卓越的性能基于两点。首先创新预训练任务Masked Language Model (MLM)以及Next Sentence Prediction (NSP). 其次训练BERT使用了大量数据和算力。
+
+MLM使得BERT能够从文本中进行双向学习，也就是说这种方式允许模型从单词的前后单词中学习其上下文关系。此前的模型这是做不到的。此前最优的算法称为Generative Pre-training (GPT) 该方法采用了从左到右的训练方式，另外ELMo 采用浅双向学习(shallow bidirectionality)。
+
+![](../../../img/nlp/cs224n/13Contextual&#32;Word&#32;Representations&#32;and&#32;Pretraining/微信截图_20190902210936.png)
+
+而近日，百度提出知识增强的语义表示模型 ERNIE（Enhanced Representation from kNowledge IntEgration），并发布了基于 PaddlePaddle 的开源代码与模型，在语言推断、语义相似度、命名实体识别、情感分析、问答匹配等自然语言处理（NLP）各类中文任务上的验证显示，模型效果全面超越 BERT。由此可以看出，预训练模型已成为近来NLP领域的潮流。
 
 喜欢的童鞋记得分享给别的小伙伴哈。AIMI-CN AI学习交流群【1015286623】 获取更多AI资料扫码加群：
 
