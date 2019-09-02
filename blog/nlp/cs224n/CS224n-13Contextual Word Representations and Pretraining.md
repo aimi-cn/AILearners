@@ -20,7 +20,7 @@ github：https://github.com/aimi-cn/AILearners
 - 训练字符级的词向量
 - 此外，你可以将其视为新的单词，并为其分配一个随机向量，将它们添加到你的词汇表。
 
-但是，对于这样的解决方案存在着一定的问题，即：我们没有办法区分不同的unknown words。此外，到目前为止，对于每一个单词，我们都只拥有一个词向量，因此很难解决一词多义的问题。接下来，我们介绍一些经典模型。
+不过，对于这样的解决方案存在着一定的问题，即：我们没有办法区分不同的unknown words。此外，到目前为止，对于每一个单词，我们都只拥有一个词向量，因此很难解决一词多义的问题。接下来，我们介绍一些经典模型。
 
 ## 经典模型
 
@@ -80,7 +80,7 @@ Howard and Ruder (2018)提出了 Universal Language Model Fine-tuning for Text C
 
 ![](../../../img/nlp/cs224n/13Contextual&#32;Word&#32;Representations&#32;and&#32;Pretraining/TIM截图20190902180041.png)
 
-## Transformer
+## 4.Transformer
 
 transformer的出现主要是为了利用纯attention来解决RNN系列网络无法并行计算的问题。模型结构图如下所示：
 
@@ -148,7 +148,7 @@ Decoder和Encoder的结构差不多，但是多了一个attention的sub-layer，
 
 Transformer是第一个用纯attention搭建的模型，算法的并行性非常好，并且在翻译任务上也获得了更好的结果，因此Transformer也可以用在NLP的其他任务上。但是，Transformer一味的去除掉了RNN，因此RNN和Transformer的结合也许会更好。
 
-## BERT
+## 5.BERT
 
 Bert模型是Google在2018年10月发布的语言表示模型，Bert在NLP领域横扫了11项任务的最优结果，可以说是最近NLP中最重要的突破。Bert模型的全称是Bidirectional Encoder Representations from Transformers，BERT模型的目标是利用大规模无标注语料训练、获得文本的包含丰富语义信息的Representation，即：文本的语义表示，然后将文本的语义表示在特定NLP任务中作微调，最终应用于该NLP任务。
 
