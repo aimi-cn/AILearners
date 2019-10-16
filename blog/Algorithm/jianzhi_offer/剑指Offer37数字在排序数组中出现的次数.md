@@ -34,7 +34,7 @@
 **python**
 
 代码实现方案：
-
+python有自带的方法进行查找~
 
 ```python
 # -*- coding:utf-8 -*-
