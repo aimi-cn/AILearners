@@ -1,4 +1,4 @@
-# LeetCode初级算法--数组02：旋转数组
+# LeetCode初级算法--数组04：两数之和
 
 > 搜索微信公众号:'AI-ming3526'或者'计算机视觉这件小事' 获取更多算法、机器学习干货  
 > csdn：https://blog.csdn.net/baidu_31657889/  
