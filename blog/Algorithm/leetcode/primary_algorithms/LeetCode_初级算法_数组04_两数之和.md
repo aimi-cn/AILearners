@@ -8,7 +8,7 @@
 ## 一、引子
 
 这是由LeetCode官方推出的的经典面试题目清单~  
-这个模块对应的是探索的初级算法~旨在帮助入门算法。我们第一遍刷的是leetcoda推荐的题目。  
+这个模块对应的是探索的初级算法~旨在帮助入门算法。我们第一遍刷的是leetcode推荐的题目。  
 查看完整的剑指Offer算法题解析请点击github链接：  
 [github地址](https://github.com/aimi-cn/AILearners/tree/master/blog/Algorithm/leetcode/primary_algorithms)
 
