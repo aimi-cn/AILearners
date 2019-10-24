@@ -1,6 +1,5 @@
 # <p align="center">AIMI-CN 推荐AI学习路线以及课程笔记</p>
 
-<div align=center><img width = '468' height ='169' src =img/otherImages/AIMI-logo.png/></div>
 
 ## 组织介绍：
 
@@ -9,7 +8,7 @@
 
 **AIMI-CN AI学习交流群(里面有各种AI相关的资源)【1015286623】<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=e0babfbb0e942a7ab871c51a13436fb5689aa4b0d8776641c8ba996d84c53385"><img border="0" src="img/otherImages/group.png" alt="AI~AIMICN" title="AI~AIMICN"></a>**
 
-**公众号也会时不时的推送各种干货等你来获取~**
+**公众号也会时不时的推送各种干货等你来关注~**
 
 **搜索微信公众号：'AI-ming3526'或者'计算机视觉这件小事' 获取更多AI方向机器学习资源干货**
 
@@ -186,3 +185,7 @@
 ## 免责声明 - 【只供学习参考】
 
 - 本项目纯粹出于学习目的
+
+
+**组织logo：**  
+<div align=center><img width = '468' height ='169' src =img/otherImages/AIMI-logo.png/></div>
