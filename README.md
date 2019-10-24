@@ -3,12 +3,17 @@
 <div align=center><img width = '468' height ='169' src =img/otherImages/AIMI-logo.png/></div>
 
 ## 组织介绍：
-> 搜索微信公众号：'AI-ming3526'或者'计算机视觉这件小事' 获取更多AI方向机器学习资源干货
 
 我们是一群爱好AI学习的爱好者！在这里我们一起学习、互相督促、一起装逼~   
 我们更新的一些AI相关的笔记~ 包括算法、机器学习、深度学习、自然语言处理，之后也会更新更多的笔记让大家一起学习~
 
 **AIMI-CN AI学习交流群(里面有各种AI相关的资源)【1015286623】<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=e0babfbb0e942a7ab871c51a13436fb5689aa4b0d8776641c8ba996d84c53385"><img border="0" src="img/otherImages/group.png" alt="AI~AIMICN" title="AI~AIMICN"></a>**
+
+**公众号也会时不时的推送各种干货等你来获取~**
+
+**搜索微信公众号：'AI-ming3526'或者'计算机视觉这件小事' 获取更多AI方向机器学习资源干货**
+
+<div align=center><img width = '258' height ='258' src =img/otherImages/qrcode.jpg/></div>
 
 # 我们的学习笔记(涉及算法、机器学习、深度学习、NLP等方向)
 
