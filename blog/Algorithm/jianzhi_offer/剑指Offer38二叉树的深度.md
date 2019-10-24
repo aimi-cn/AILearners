@@ -17,9 +17,13 @@
 
 ### 1、思路
 
-如果二叉树的每个节点的左子树和右子树的深度不大于1，它就是平衡二叉树。
+使用递归的方法解决此题。直接上图：
 
-先写一个求深度的函数，再对每一个节点判断，看该节点的左子树的深度和右子树的深度的差是否大于1
+![](../../../img/Algorithm/jianzhi_offer/jzoffer_38_01.png)
+
+我们可以看到树的深度H等于1加上左右两个左右子树深度的最大值。
+
+所以我们直接使用递归方法处理~看代码
 
 ### 2、编程实现
 
@@ -35,17 +39,15 @@
 #         self.left = None
 #         self.right = None
 class Solution:
-    def IsBalanced_Solution(self, pRoot):
+    def TreeDepth(self, pRoot):
         # write code here
-        # 每个节点的左子树和右子树的高度差至多为1。
-        # 如果二叉树的每个节点的左子树和右子树的深度不大于1，它就是平衡二叉树。
-        # 先写一个求深度的函数，再对每一个节点判断，看该节点的左子树的深度和右子树的深度的差是否大于1
-        if not pRoot:
-            return True
-        if abs(self.maxDepth(pRoot.left) - self.maxDepth(pRoot.right)) > 1:
-            return False
-        return self.IsBalanced_Solution(pRoot.left) and self.IsBalanced_Solution(pRoot.right)
-    def maxDepth(self,pRoot):
-        if not pRoot: return 0
-        return max(self.maxDepth(pRoot.left), self.maxDepth(pRoot.right)) + 1
+        if pRoot is None:
+            return 0
+        # 使用递归
+        # 如果该树只有一个结点，它的深度为1.如果根节点只有左子树没有右子树，
+        # 那么树的深度为左子树的深度加1；同样，如果只有右子树没有左子树，
+        # 那么树的深度为右子树的深度加1。如果既有左子树也有右子树，
+        # 那该树的深度就是左子树和右子树的最大值加1.
+        count = max(self.TreeDepth(pRoot.left),self.TreeDepth(pRoot.right)) + 1
+        return count
 ```
