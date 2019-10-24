@@ -59,12 +59,11 @@ class Solution(object):
         :type nums: List[int]
         :rtype: TreeNode
         """
-        #递归方法
         if not nums:
             return None
-        mid=len(nums)//2#找到中间节点
-        root=TreeNode(nums[mid])#当前节点为根节点
-        root.left=self.sortedArrayToBST(nums[:mid])#小于当前根节点的作为左子树
-        root.right=self.sortedArrayToBST(nums[mid+1:])#大于当前根节点的作为右子树
+        mid=len(nums)//2
+        root=TreeNode(nums[mid])
+        root.left=self.sortedArrayToBST(nums[:mid])
+        root.right=self.sortedArrayToBST(nums[mid+1:])
         return root
 ```
