@@ -57,7 +57,7 @@ class Solution:
 - 从2开始，将2标为橙色，然后划去2的其他倍数；第一个既未画圈又没有被划去的数是3，并将其标为橙色，再划去3的其他倍数；
 - 依次类推，直到根号n位置。这时，表中未被排除的就是我们所要求的质数。
 
-![](../../../../img/Algorithm/LeetCode/100以内的质数筛选-埃式筛法.gif)
+![](../../../../img/Algorithm/LeetCode/LeetCode_初级算法_数学01_计算质数.md/100以内的质数筛选-埃式筛法.gif)
 
 ```python
 class Solution:
