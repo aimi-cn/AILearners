@@ -7,6 +7,7 @@ cs231n(面向视觉识别的卷积神经网络)课程笔记
 [@suanmeitang](https://github.com/suanmeitang1)   
 [@xhh](https://github.com/tjp-xhh)  
 [@wyy](https://github.com/WYY1996)  
+[@liuhui]
  
 
 ## 2、课程详情
